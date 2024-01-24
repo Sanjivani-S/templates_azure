@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Records from table</h1>
+        <p class="lead">ordered by date </p>
+        <hr class="my-4">
+        <p>
+        {% if user_records %}
+            <ol>
+            {% for a in user_records %}
+                <li>User Info</li>
+                <ul>
+                    <li>row is {{a}}</li>
+                    <li>First Name: {{ a.FirstName}}</li>
+                    <li> Last Name: {{ a.LastName }}</li>
+                    <li>Email: {{a.email}} </li>
+                </ul>
+            {% endfor %}
+            </ol>
+        {% else %}
+            <p>NO Records found !!</p>
+        {%endif%}
+        </p>
+    </div>
+</body>
+</html>
