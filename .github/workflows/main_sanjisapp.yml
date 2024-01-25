@@ -66,4 +66,4 @@ jobs:
         with:
           app-name: 'SanjisApp'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8C58C2594B5E4C16B2D6104BE02644D0 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F28F532FE4594621B75D0F89B0EF732C }}
